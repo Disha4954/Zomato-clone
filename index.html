@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+         <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="nav-menu">
+                <div class="add-icon border">
+                    <i class="fa-solid fa-bars"></i>&nbsp;&nbsp;
+                    <p style="height: 14.4px ; width: 31.91px;">Menu</p>
+                </div>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="What are you looking for" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="nav-loc border">
+                <i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;
+                <p style="height: 10px ; width: 25px ;">Mumbai</p>
+            </div>
+            <div class="nav-pen "><i class="fa-solid fa-pen"></i></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="nav-user border"><i  class="fa-solid fa-user"></i></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="nav-cart border"><i class="fa-solid fa-cart-shopping"></i></div>
+         </div>  
+        
+    </header>
+    <div class="hero-sec"></div><br>
+    <div class="parallax"></div><br><br>
+    <h2 style="color: black ; padding-left: 85px;"><b>Explore new food</b></h2><br><hr><hr><br>
+    <div class="food">
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+   
+    <main>
+        <section id="product-list">
+            <h2>Food Items</h2><hr>
+            <div class="product" data-name="Pizza" data-price="9.99">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/800px-Pizza-3007395.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>$9.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Burger" data-price="5.99">
+                <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg" alt="Burger">
+                <h3>Burger</h3>
+                <p>$5.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Pasta" data-price="7.99">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTolQiik3h7tTiVXzXdwlXE8TEL1VMarlU9EQ&s" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>$7.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2><br><hr>
+            <div id="cart-items"></div>
+            <p id="total-amount">Total: $0.00</p>
+            <button id="checkout">Checkout</button>
+        </section>
+
+        <section id="delivery-form" style="display: none;">
+            <h2>Delivery Address</h2>
+            <form id="address-form">
+                <label for="address">Address:</label>
+                <input type="text" id="address" required>
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <hr style="color: black;"><br><p>&copy; 2024 My Blog. All rights reserved.</p><br><hr style="color: black;"><br>
+        <p> Help And Support &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Careers At Croma</p><br>
+        <p> FAQs    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms of use</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
